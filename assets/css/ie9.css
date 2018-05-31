@@ -1,33 +1,15 @@
 /*
-	Landed by Pixelarity
+	Prologue by Pixelarity
 	pixelarity.com | hello@pixelarity.com
 	License: pixelarity.com/license
 */
 
-/* Loader */
+/* Button */
 
-	body.landing:before, body.landing:after {
-		display: none !important;
-	}
-
-/* Icon */
-
-	.icon.alt {
-		color: inherit !important;
-	}
-
-	.icon.major.alt:before {
-		color: #ffffff !important;
-	}
-
-/* Banner */
-
-	#banner:after {
-		background-color: rgba(23, 24, 32, 0.95);
-	}
-
-/* Footer */
-
-	#footer .icons .icon.alt:before {
-		color: #ffffff !important;
+	input[type="button"],
+	input[type="submit"],
+	input[type="reset"],
+	button,
+	.button {
+		background-image: url("images/ie/grad0-15.svg");
 	}
