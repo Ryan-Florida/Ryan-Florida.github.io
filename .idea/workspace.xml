@@ -2,39 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2c41bf2d-5f2b-4097-84c6-6e09365cab56" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/books.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hobbies.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mathematics.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movies.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/physics.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/ie8.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/ie8.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/ie9.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/ie9.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/images/arrow.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/images/ie/banner-overlay.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/images/overlay.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/images/overlay.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/jquery.dropotron.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/jquery.scrollex.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/sass/ie8.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/ie8.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/sass/ie9.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/ie9.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/sass/libs/_vars.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/libs/_vars.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/sass/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/banner.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/banner.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/pic01.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/pic02.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/pic02.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/pic03.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/pic03.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/pic04.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/pic04.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/pic05.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/pic05.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/pic06.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/pic06.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/pic07.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/pic07.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/pic08.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/pic08.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/left-sidebar.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/no-sidebar.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/right-sidebar.html" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -45,16 +13,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="359">
-              <caret line="221" column="53" selection-start-line="221" selection-start-column="53" selection-end-line="221" selection-end-column="53" />
+            <state relative-caret-position="209">
+              <caret line="166" column="40" selection-start-line="166" selection-start-column="40" selection-end-line="166" selection-end-column="40" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="419">
@@ -104,8 +72,8 @@
       <find>mobile</find>
       <find>cover</find>
       <find>scroll</find>
-      <find>smoke</find>
       <find>portfolio</find>
+      <find>smoke</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -117,8 +85,8 @@
         <option value="$PROJECT_DIR$/hobbies.html" />
         <option value="$PROJECT_DIR$/assets/js/functions.js" />
         <option value="$PROJECT_DIR$/assets/js/main.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/assets/css/main.css" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -246,12 +214,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1527634758723</updated>
-      <workItem from="1527634760044" duration="44317000" />
+      <workItem from="1527634760044" duration="44459000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44317000" />
+    <option name="totallyTimeSpent" value="44459000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="960" y="24" width="960" height="1056" extended-state="4" />
@@ -349,17 +317,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="221" column="53" selection-start-line="221" selection-start-column="53" selection-end-line="221" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="419">
           <caret line="2642" column="13" selection-start-line="2642" selection-start-column="13" selection-end-line="2642" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="166" column="40" selection-start-line="166" selection-start-column="40" selection-end-line="166" selection-end-column="40" />
         </state>
       </provider>
     </entry>
