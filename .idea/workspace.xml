@@ -2,20 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2c41bf2d-5f2b-4097-84c6-6e09365cab56" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/black_smoke_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/black_smoke_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/black_smoke_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/chess.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/fractal.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/hand.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/hollow_chess.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/smoke_effects_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/smoke_effects_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/spiral.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/vortex.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,20 +13,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="501">
-              <caret line="123" column="32" selection-start-line="123" selection-start-column="32" selection-end-line="123" selection-end-column="32" />
+            <state relative-caret-position="666">
+              <caret line="225" column="4" selection-start-line="225" selection-start-column="4" selection-end-line="225" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-13711">
-              <caret line="1706" column="27" lean-forward="true" selection-start-line="1706" selection-start-column="27" selection-end-line="1706" selection-end-column="27" />
+            <state relative-caret-position="15">
+              <caret line="2286" column="34" selection-start-line="2286" selection-start-column="34" selection-end-line="2286" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -99,8 +85,8 @@
         <option value="$PROJECT_DIR$/hobbies.html" />
         <option value="$PROJECT_DIR$/assets/js/functions.js" />
         <option value="$PROJECT_DIR$/assets/js/main.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/assets/css/main.css" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -231,12 +217,12 @@
       <workItem from="1527800469649" duration="1191000" />
       <workItem from="1527801688425" duration="249000" />
       <workItem from="1527801951508" duration="5000" />
-      <workItem from="1527802809540" duration="11278000" />
+      <workItem from="1527802809540" duration="11539000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57867000" />
+    <option name="totallyTimeSpent" value="58128000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="960" y="24" width="960" height="1056" extended-state="4" />
@@ -249,7 +235,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32972974" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32799146" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32799146" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" id="Palette" order="3" />
@@ -449,17 +435,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/assets/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="501">
-          <caret line="123" column="32" selection-start-line="123" selection-start-column="32" selection-end-line="123" selection-end-column="32" />
+        <state relative-caret-position="15">
+          <caret line="2286" column="34" selection-start-line="2286" selection-start-column="34" selection-end-line="2286" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/main.css">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-13711">
-          <caret line="1706" column="27" lean-forward="true" selection-start-line="1706" selection-start-column="27" selection-end-line="1706" selection-end-column="27" />
+        <state relative-caret-position="666">
+          <caret line="225" column="4" selection-start-line="225" selection-start-column="4" selection-end-line="225" selection-end-column="4" />
         </state>
       </provider>
     </entry>
