@@ -1645,7 +1645,7 @@
 	}
 
 		a:hover {
-			color: #69c6e5;
+			color: #777777;
 			border-bottom-color: rgba(255, 255, 255, 0);
 		}
 
@@ -1709,14 +1709,14 @@
 		}
 
 		.image.avatar48 {
-			width: 48px;
-			height: 48px;
-			background: #f00;
+			width: 75px;
+			height: 100px;
+			background: #000;
 		}
 
 			.image.avatar48 img {
-				width: 48px;
-				height: 48px;
+				width: 75px;
+				height: 100px;
 			}
 
 		.image.fit {
@@ -1992,8 +1992,8 @@
 		-webkit-justify-content: space-between;
 		-ms-justify-content: space-between;
 		justify-content: space-between;
-		background: #222629 url("images/overlay.png");
-		box-shadow: inset -0.25em 0 0.25em 0 rgba(0, 0, 0, 0.1);
+		background: #000000 url("images/overlay.png");
+		box-shadow: inset -0.25em 0 0.25em 0 rgba(255, 255, 255, 0.5);
 		color: #fff;
 		height: 100%;
 		left: 0;
@@ -2103,13 +2103,13 @@
 				}
 
 			#nav ul li a.active {
-				background: rgba(0, 0, 0, 0.15);
-				box-shadow: inset 0 0 0.25em 0 rgba(0, 0, 0, 0.125);
+				background: rgba(255, 255, 255, 0.15);
+				box-shadow: inset 0 0 0.25em 0 rgba(255, 255, 255, 0.5);
 				color: #fff;
 			}
 
 				#nav ul li a.active span:before {
-					color: #69c6e5;
+					color: #FFFFFF;
 				}
 
 /* Footer */
@@ -2382,7 +2382,7 @@
 				width: 275px;
 				z-index: 10002;
 				width: 275px;
-				background: #222729 url("images/overlay.png");
+				background: #000000 url("images/overlay.png");
 				box-shadow: inset -0.25em 0 0.25em 0 rgba(0, 0, 0, 0.125);
 			}
 
@@ -2582,7 +2582,6 @@ header.holder {
 	overflow: hidden;
 	display: block;
 	margin: 0 0 2em 0;
-	/*background: white;*/
 }
 
 div.image_1 {
@@ -2641,4 +2640,8 @@ div.image_4 {
 	background-position: center;
 	background-repeat: no-repeat;
 	left: 500px;
+}
+
+header.top_header {
+	background-color: rgba(0, 0, 0, 0.6);
 }

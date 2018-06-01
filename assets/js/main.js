@@ -1,4 +1,5 @@
 (function($) {
+    var about = $('#about-link').offset().top;
 
 	skel.breakpoints({
 		wide: '(min-width: 961px) and (max-width: 1880px)',
@@ -24,17 +25,34 @@
 			if (skel.vars.IEVersion < 9)
 				$(':last-child').addClass('last-child');
 
+
+        $(window).bind('scroll', function() {
+            var wScroll = $(this).scrollTop();
+            if(wScroll >= about) {
+                $(window).scroll(function()
+                {
+                    $('.image_2').css({
+                        'transform': 'translate(0px, '+ (wScroll - about)/40 +'%)'
+                    });
+                    $('.image_1').css({
+                        'transform': 'translate(0px, '+ (wScroll - about)/20 +'%)'
+                    });
+            	});
+			}
+        });
+			//if(document.activeElement.id == "about-link")
+			//	alert("hey");
         $(window).scroll(function()
         {
             var wScroll = $(this).scrollTop();
 
-            $('.image_1').css({
-                'transform': 'translate(0px, '+ wScroll/40 +'%)'
-            });
-
-            $('.image_2').css({
-                'transform': 'translate(0px, '+ wScroll/60 +'%)'
-            });
+        //    $('.image_1').css({
+         //       'transform': 'translate(0px, '+ wScroll/40 +'%)'
+          //  });
+//
+ //           $('.image_2').css({
+  //              'transform': 'translate(0px, '+ wScroll/60 +'%)'
+   //         });
 
             $('.image_4').css({
 				'transform': 'rotate(' + wScroll/5 + 'deg)'
