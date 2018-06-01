@@ -321,6 +321,22 @@ div.image_7 {
 
 }
 
+@media screen and (max-width: 470px) {
+
+	div.image_5 {
+		top: 170px;
+	}
+
+	div.image_6 {
+		top: 200px;
+	}
+
+	div.image_7 {
+		top: 170px;
+	}
+
+}
+
 /* Grid */
 
 	.row {

@@ -31,44 +31,6 @@
 			if (skel.vars.IEVersion < 9)
 				$(':last-child').addClass('last-child');
 
-
-        // //Effects.
-        // $(window).bind('scroll', function() {
-        //     var wScroll = $(this).scrollTop();
-			// $(window).scroll(function()
-			// {
-        //         if(wScroll >= about) {
-			// 		$(window).scroll(function() {
-        //                 //Want background element to move down faster than middle element.
-        //                 $('.image_1').css({
-        //                     'transform': 'translate(0px, ' + (wScroll - about) / 20 + '%)'
-        //                 });
-        //                 $('.image_2').css({
-        //                     'transform': 'translate(0px, ' + (wScroll - about) / 40 + '%)'
-        //                 });
-        //             });
-			// 	}
-			// 	$('.image_5').css({
-			// 		'transform': 'translate(0px, -'+ wScroll/18 +'%)'
-			// 	});
-        //         $('.image_6').css({
-        //             'transform': 'translate(0px, -'+ wScroll/18 +'%)'
-        //         });
-        //         $('.image_7').css({
-        //             'transform': 'translate(0px, -'+ wScroll/18 +'%)'
-        //         });
-			// });
-        // });
-        //
-        // $(window).scroll(function()
-        // {
-        //     var wScroll = $(this).scrollTop();
-        //
-        //     $('.image_4').css({
-			// 	'transform': 'rotate(' + wScroll/5 + 'deg)'
-			// });
-        // });
-
 		// Fix: Placeholder polyfill.
 			$('form').placeholder();
 
