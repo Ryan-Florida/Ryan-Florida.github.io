@@ -1,4 +1,10 @@
 (function($) {
+	//Scroll to top of screen upon reload. Need this for parallax effect to work effectively.
+	window.onbeforeunload = function() {
+		window.scrollTo(0, 0);
+	}
+
+	//Get original offset of about section.
     var about = $('#about-link').offset().top;
 
 	skel.breakpoints({
@@ -26,38 +32,42 @@
 				$(':last-child').addClass('last-child');
 
 
-        $(window).bind('scroll', function() {
-            var wScroll = $(this).scrollTop();
-            if(wScroll >= about) {
-                $(window).scroll(function()
-                {
-                    $('.image_2').css({
-                        'transform': 'translate(0px, '+ (wScroll - about)/40 +'%)'
-                    });
-                    $('.image_1').css({
-                        'transform': 'translate(0px, '+ (wScroll - about)/20 +'%)'
-                    });
-            	});
-			}
-        });
-			//if(document.activeElement.id == "about-link")
-			//	alert("hey");
-        $(window).scroll(function()
-        {
-            var wScroll = $(this).scrollTop();
-
-        //    $('.image_1').css({
-         //       'transform': 'translate(0px, '+ wScroll/40 +'%)'
-          //  });
-//
- //           $('.image_2').css({
-  //              'transform': 'translate(0px, '+ wScroll/60 +'%)'
-   //         });
-
-            $('.image_4').css({
-				'transform': 'rotate(' + wScroll/5 + 'deg)'
-			});
-        });
+        // //Effects.
+        // $(window).bind('scroll', function() {
+        //     var wScroll = $(this).scrollTop();
+			// $(window).scroll(function()
+			// {
+        //         if(wScroll >= about) {
+			// 		$(window).scroll(function() {
+        //                 //Want background element to move down faster than middle element.
+        //                 $('.image_1').css({
+        //                     'transform': 'translate(0px, ' + (wScroll - about) / 20 + '%)'
+        //                 });
+        //                 $('.image_2').css({
+        //                     'transform': 'translate(0px, ' + (wScroll - about) / 40 + '%)'
+        //                 });
+        //             });
+			// 	}
+			// 	$('.image_5').css({
+			// 		'transform': 'translate(0px, -'+ wScroll/18 +'%)'
+			// 	});
+        //         $('.image_6').css({
+        //             'transform': 'translate(0px, -'+ wScroll/18 +'%)'
+        //         });
+        //         $('.image_7').css({
+        //             'transform': 'translate(0px, -'+ wScroll/18 +'%)'
+        //         });
+			// });
+        // });
+        //
+        // $(window).scroll(function()
+        // {
+        //     var wScroll = $(this).scrollTop();
+        //
+        //     $('.image_4').css({
+			// 	'transform': 'rotate(' + wScroll/5 + 'deg)'
+			// });
+        // });
 
 		// Fix: Placeholder polyfill.
 			$('form').placeholder();
@@ -93,23 +103,6 @@
 							$nav_a
 								.removeClass('active')
 								.addClass('scrollzer-locked');
-
-							// if(this.id == 'about-link') {
-                             //    $(window).scroll(function()
-                             //    {
-                             //        var wScroll = $(this).scrollTop();
-                            //
-                             //        $('.image_1').css({
-                             //            'transform': 'translate(0px, '+ wScroll/50 +'%)'
-                             //        });
-                            //
-                             //        $('.image_2').css({
-                             //            'transform': 'translate(0px, '+ wScroll/100 +'%)'
-                             //        });
-                             //    })
-                            // }
-
-
 					});
 
 			// Initialize scrollzer.
@@ -157,7 +150,43 @@
 						.css('transition', 'none');
 
 
+		//Additional stuff.
+        //Effects.
+        $(window).bind('scroll', function() {
+            var wScroll = $(this).scrollTop();
+            $(window).scroll(function()
+            {
+                if(wScroll >= about) {
+                    $(window).scroll(function() {
+                        //Want background element to move down faster than middle element.
+                        $('.image_1').css({
+                            'transform': 'translate(0px, ' + (wScroll - about) / 20 + '%)'
+                        });
+                        $('.image_2').css({
+                            'transform': 'translate(0px, ' + (wScroll - about) / 40 + '%)'
+                        });
+                    });
+                }
+                $('.image_5').css({
+                    'transform': 'translate(0px, -'+ wScroll/18 +'%)'
+                });
+                $('.image_6').css({
+                    'transform': 'translate(0px, -'+ wScroll/18 +'%)'
+                });
+                $('.image_7').css({
+                    'transform': 'translate(0px, -'+ wScroll/18 +'%)'
+                });
+            });
+        });
 
+        $(window).scroll(function()
+        {
+            var wScroll = $(this).scrollTop();
+
+            $('.image_4').css({
+                'transform': 'rotate(' + wScroll/5 + 'deg)'
+            });
+        });
 	});
 
 })(jQuery);

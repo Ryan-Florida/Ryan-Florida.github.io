@@ -1,12 +1,6 @@
 @import url("font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,600");
 
-/*
-	Prologue by Pixelarity
-	pixelarity.com | hello@pixelarity.com
-	License: pixelarity.com/license
-*/
-
 /* Reset */
 
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -87,6 +81,40 @@
 		width: 1400px;
 	}
 
+div.image_5 {
+	background-image: url("../../images/limbo_1.png");
+	position: absolute;
+	height: 600px;
+	width: 100%;
+	background-size: 100% 100%;
+	background-position: bottom center;
+	background-repeat: no-repeat;
+	top: 275px;
+}
+
+div.image_6 {
+	background-image: url("../../images/limbo_2.png");
+	position: absolute;
+	height: 600px;
+	width: 100%;
+	background-size: 100% 100%;
+	background-position: bottom center;
+	background-repeat: no-repeat;
+	top: 305px;
+}
+
+div.image_7 {
+	background-image: url("../../images/limbo_3.png");
+	position: absolute;
+	height: 600px;
+	width: 100%;
+	background-size: 100% 100%;
+	background-position: bottom center;
+	background-repeat: no-repeat;
+	top: 275px;
+}
+
+
 	@media screen and (min-width: 961px) and (max-width: 1880px) {
 
 		.container.\31 25\25 {
@@ -109,6 +137,18 @@
 
 		.container {
 			width: 1200px;
+		}
+
+		div.image_5 {
+			top: 250px;
+		}
+
+		div.image_6 {
+			top: 275px;
+		}
+
+		div.image_7 {
+			top: 250px;
 		}
 
 	}
@@ -137,6 +177,18 @@
 			width: 960px;
 		}
 
+		div.image_5 {
+			top: 200px;
+		}
+
+		div.image_6 {
+			top: 230px;
+		}
+
+		div.image_7 {
+			top: 200px;
+		}
+
 	}
 
 	@media screen and (min-width: 961px) and (max-width: 1320px) {
@@ -161,6 +213,18 @@
 
 		.container {
 			width: 100%;
+		}
+
+		div.image_5 {
+			top: 175px;
+		}
+
+		div.image_6 {
+			top: 205px;
+		}
+
+		div.image_7 {
+			top: 175px;
 		}
 
 	}
@@ -189,6 +253,18 @@
 			width: 100%;
 		}
 
+		div.image_5 {
+			top: 135px;
+		}
+
+		div.image_6 {
+			top: 165px;
+		}
+
+		div.image_7 {
+			top: 135px;
+		}
+
 	}
 
 	@media screen and (max-width: 736px) {
@@ -215,7 +291,35 @@
 			width: 100% !important;
 		}
 
+		div.image_5 {
+			top: 100px;
+		}
+
+		div.image_6 {
+			top: 130px;
+		}
+
+		div.image_7 {
+			top: 100px;
+		}
+
 	}
+
+@media screen and (max-width: 470px) {
+
+	div.image_5 {
+		top: 125px;
+	}
+
+	div.image_6 {
+		top: 155px;
+	}
+
+	div.image_7 {
+		top: 125px;
+	}
+
+}
 
 /* Grid */
 
@@ -2644,4 +2748,43 @@ div.image_4 {
 
 header.top_header {
 	background-color: rgba(0, 0, 0, 0.6);
+	/*overflow: hidden;*/
+	position: relative;
 }
+
+section#top{
+	overflow: hidden;
+}
+
+/*div.image_5 {*/
+	/*background-image: url("../../images/limbo_1.png");*/
+	/*position: absolute;*/
+	/*height: 600px;*/
+	/*width: 100%;*/
+	/*background-size: 100% 100%;*/
+	/*background-position: bottom center;*/
+	/*background-repeat: no-repeat;*/
+	/*!*top: 300px;*!*/
+/*}*/
+
+/*div.image_6 {*/
+	/*background-image: url("../../images/limbo_2.png");*/
+	/*position: absolute;*/
+	/*height: 600px;*/
+	/*width: 100%;*/
+	/*background-size: 100% 100%;*/
+	/*background-position: bottom center;*/
+	/*background-repeat: no-repeat;*/
+	/*!*top: 300px;*!*/
+/*}*/
+
+/*div.image_7 {*/
+	/*background-image: url("../../images/limbo_3.png");*/
+	/*position: absolute;*/
+	/*height: 600px;*/
+	/*width: 100%;*/
+	/*background-size: 100% 100%;*/
+	/*background-position: bottom center;*/
+	/*background-repeat: no-repeat;*/
+	/*!*top: 300px;*!*/
+/*}*/
