@@ -1,11 +1,8 @@
 (function($) {
 	//Scroll to top of screen upon reload. Need this for parallax effect to work effectively.
-	window.onbeforeunload = function() {
-		window.scrollTo(0, 0);
-	}
-
-	//Get original offset of about section.
-    var about = $('#about-link').offset().top;
+	// window.onbeforeunload = function() {
+	// 	window.scrollTo(0, 0);
+	// }
 
 	skel.breakpoints({
 		wide: '(min-width: 961px) and (max-width: 1880px)',
@@ -118,35 +115,18 @@
             var wScroll = $(this).scrollTop();
             $(window).scroll(function()
             {
-                if(wScroll >= about) {
-                    $(window).scroll(function() {
-                        //Want background element to move down faster than middle element.
-                        $('.image_1').css({
-                            'transform': 'translate(0px, ' + (wScroll - about) / 20 + '%)'
-                        });
-                        $('.image_2').css({
-                            'transform': 'translate(0px, ' + (wScroll - about) / 40 + '%)'
-                        });
-                    });
-                }
-                $('.image_5').css({
-                    'transform': 'translate(0px, -'+ wScroll/18 +'%)'
+				$('.hours').css({
+					'-webkit-transform' : 'rotate(' + wScroll/6 + 'deg)',
+                    '-moz-transform' : 'rotate(' + wScroll/6 + 'deg)',
+                    '-ms-transform' : 'rotate(' + wScroll/6 + 'deg)',
+                    'transform' : 'rotate(' + wScroll/6 + 'deg)'
+				});
+                $('.minutes').css({
+                    '-webkit-transform' : 'rotate(' + wScroll/2 + 'deg)',
+                    '-moz-transform' : 'rotate(' + wScroll/2 + 'deg)',
+                    '-ms-transform' : 'rotate(' + wScroll/2 + 'deg)',
+                    'transform' : 'rotate(' + wScroll/2 + 'deg)'
                 });
-                $('.image_6').css({
-                    'transform': 'translate(0px, -'+ wScroll/18 +'%)'
-                });
-                $('.image_7').css({
-                    'transform': 'translate(0px, -'+ wScroll/18 +'%)'
-                });
-            });
-        });
-
-        $(window).scroll(function()
-        {
-            var wScroll = $(this).scrollTop();
-
-            $('.image_4').css({
-                'transform': 'rotate(' + wScroll/5 + 'deg)'
             });
         });
 	});

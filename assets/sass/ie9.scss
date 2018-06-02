@@ -2,13 +2,6 @@
 @import 'libs/functions';
 @import 'libs/mixins';
 @import 'libs/skel';
-
-/*
-	Prologue by Pixelarity
-	pixelarity.com | hello@pixelarity.com
-	License: pixelarity.com/license
-*/
-
 /* Button */
 
 	input[type="button"],
@@ -16,5 +9,5 @@
 	input[type="reset"],
 	button,
 	.button {
-		background-image: url('images/ie/grad0-15.svg');
+		background-image: url('../../assets/css/images/ie/grad0-15.svg');
 	}
