@@ -111,24 +111,24 @@
 
 		//Additional stuff.
         //Effects.
-        $(window).bind('scroll', function() {
-            var wScroll = $(this).scrollTop();
-            $(window).scroll(function()
-            {
-				$('.hours').css({
-					'-webkit-transform' : 'rotate(' + wScroll/6 + 'deg)',
-                    '-moz-transform' : 'rotate(' + wScroll/6 + 'deg)',
-                    '-ms-transform' : 'rotate(' + wScroll/6 + 'deg)',
-                    'transform' : 'rotate(' + wScroll/6 + 'deg)'
-				});
-                $('.minutes').css({
-                    '-webkit-transform' : 'rotate(' + wScroll/2 + 'deg)',
-                    '-moz-transform' : 'rotate(' + wScroll/2 + 'deg)',
-                    '-ms-transform' : 'rotate(' + wScroll/2 + 'deg)',
-                    'transform' : 'rotate(' + wScroll/2 + 'deg)'
-                });
-            });
-        });
+        // $(window).bind('scroll', function() {
+        //     var wScroll = $(this).scrollTop();
+        //     $(window).scroll(function()
+        //     {
+			// 	$('.hours').css({
+			// 		'-webkit-transform' : 'rotate(' + wScroll/6 + 'deg)',
+        //             '-moz-transform' : 'rotate(' + wScroll/6 + 'deg)',
+        //             '-ms-transform' : 'rotate(' + wScroll/6 + 'deg)',
+        //             'transform' : 'rotate(' + wScroll/6 + 'deg)'
+			// 	});
+        //         $('.minutes').css({
+        //             '-webkit-transform' : 'rotate(' + wScroll + 'deg)',
+        //             '-moz-transform' : 'rotate(' + wScroll + 'deg)',
+        //             '-ms-transform' : 'rotate(' + wScroll + 'deg)',
+        //             'transform' : 'rotate(' + wScroll + 'deg)'
+        //         });
+        //     });
+        // });
 	});
 
 })(jQuery);

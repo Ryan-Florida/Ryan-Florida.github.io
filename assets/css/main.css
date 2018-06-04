@@ -2181,10 +2181,22 @@
 				background-position: center center;
 			}
 
-			#main > section.one {
+			#main > section.one:before {
 				background-color: #81918E;
 				background-image: url("../../images/smoke.jpg");
                 background-attachment: fixed;
+				content: "";
+				display: block;
+				position: fixed;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				z-index: -10;
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
 			}
 
 			#main > section.two {
@@ -2591,13 +2603,20 @@ div.image_1 {
 	overflow: hidden;
 }
 
+@keyframes rotate {
+	100% {
+		transform: rotateZ(360deg);
+	}
+}
+
 div.clock {
+	background-image: url("../../images/trees.jpg");
     position: relative;
 	height: 400px;
 	width: 100%;
-	background-size: contain;
-	background-position: center center;
-	background-attachment: initial;
+	background-size: 100%;
+	background-position: 100%;
+	background-attachment: fixed;
 	background-repeat: no-repeat;
 	overflow: hidden;
 	display: block;
@@ -2606,9 +2625,10 @@ div.clock {
 div.clock_face {
     background-image: url("../../images/clock_face.png");
 	position: relative;
-	height: 400px;
-	width: 400px;
+	height: 200px;
+	width: 200px;
     margin: 0 auto;
+	top: 25%;
 	background-size: 100%;
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -2623,6 +2643,18 @@ div.clock_face {
     right: 0;
     bottom: 0;
     left: 0;
+}
+
+.hours-container {
+	-webkit-animation: rotate 30s infinite linear;
+	-o-animation: rotate 30s infinite linear;
+	animation: rotate 30s infinite linear;
+}
+
+.minutes-container {
+	-webkit-animation: rotate 0.5s infinite linear;
+	-o-animation: rotate 0.5s infinite linear;
+	animation: rotate 0.5s infinite linear;
 }
 
 .hours {
