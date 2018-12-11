@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2c41bf2d-5f2b-4097-84c6-6e09365cab56" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index_alt.html" beforeDir="false" afterPath="$PROJECT_DIR$/index_alt.html" afterDir="false" />
-    </list>
+    <list default="true" id="2c41bf2d-5f2b-4097-84c6-6e09365cab56" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,7 +36,7 @@
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="2703" selection-start-column="2703" selection-end-column="2703" />
+              <caret column="2680" lean-forward="true" selection-start-column="2680" selection-end-column="2680" />
               <folding>
                 <element signature="e#4344#4350#0" expanded="true" />
               </folding>
@@ -329,16 +326,15 @@
       <workItem from="1529457653450" duration="24000" />
       <workItem from="1531693862976" duration="234000" />
       <workItem from="1542556373306" duration="3936000" />
-      <workItem from="1544501855603" duration="6061000" />
+      <workItem from="1544501855603" duration="6881000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="124265000" />
+    <option name="totallyTimeSpent" value="125085000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="24" width="1280" height="1416" extended-state="4" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20159362" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -679,7 +675,7 @@
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="2703" selection-start-column="2703" selection-end-column="2703" />
+          <caret column="2680" lean-forward="true" selection-start-column="2680" selection-end-column="2680" />
           <folding>
             <element signature="e#4344#4350#0" expanded="true" />
           </folding>
