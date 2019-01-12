@@ -15,10 +15,10 @@ var vm1 = new Vue({
         contactMethods: ['Email', 'LinkedIn', 'Twitter', 'Instagram'],
         hobbies: ['Books', 'Music', 'Projects'],
         degrees: ['Professional Computer Science', 'Professional Mathematics', 'Applied Physics'],
-        stgoals: ['Obtain MS in Computer Science', 'Obtain MBA',
-            'Sponsor one child per year from third-world country to come to college.'],
-        ltgoals: ['Obtain PhD (probably in machine learning)', 'Sponsor five children per year from third-world country' +
-        ' to come to college', 'Deliver laptops to all age groups in third-world country.']
+        stgoals: ['Obtain MS in Computer Science.', 'Obtain MBA.',
+            'Sponsor one person per year from a third-world country to come to college.'],
+        ltgoals: ['Obtain PhD (probably in machine learning).', 'Sponsor five people per year from a third-world country' +
+        ' to come to college.', 'Deliver laptops to all age groups in third-world country.']
     },
     methods: {
         mouseOver1: function () {
