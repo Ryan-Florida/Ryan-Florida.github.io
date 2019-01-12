@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../assets/CSS/main.css">
+</head>
+<body>
+<div v-bind:style="{backgroundColor: color}" id="wrapper">
+    <header id="header" class="header-component">
+        <div class="upper-left-corner">
+            <a href="../index.html" v-on:mouseover="mouseOver1" v-on:mouseleave="mouseOver1" v-bind:style="{color: textcolor1}"> TAKE ME BACK </a>
+        </div>
+        <div class="upper-right-corner">
+            <a v-on:mouseover="mouseOver2" v-on:mouseleave="mouseOver2" v-bind:style="{color: textcolor2}"> Book of the Week </a>
+        </div>
+    </header>
+
+    <div id='central' class="center middle" v-if="!(active1 || active2 || active3 || active4)">
+        <p>Hello. My name is Ryan Florida and I am an aspiring software engineer who has a very</p>
+        <p>strong interest in machine learning and artificial intelligence. I am endlessly</p>
+        <p>fascinated by autonomous vehicles and data mining.</p>
+    </div>
+
+    <div class="center middle" v-show="active1" v-bind:style="{color: textcolor1}">
+        <p>Escape!</p>
+    </div>
+
+    <div class="center middle" v-show="active2" v-bind:style="{color: textcolor2}">
+        COMING SOON!
+    </div>
+
+    <div  class='middle' v-show="active3" v-bind:style="{color: textcolor3}">
+        COMING SOON!
+    </div>
+
+    <div  class='middle' v-show="active4" v-bind:style="{color: textcolor4}">
+        COMING SOON!
+    </div>
+
+    <footer id="footer" class="footer-component">
+        <div class="lower-left-corner">
+            <a v-on:mouseover="mouseOver3" v-on:mouseleave="mouseOver3" v-bind:style="{color: textcolor3}"> Music I Enjoy </a>
+        </div>
+        <div class="lower-right-corner">
+            <a v-on:mouseover="mouseOver4" v-on:mouseleave="mouseOver4" v-bind:style="{color: textcolor4}"> My Projects </a>
+        </div>
+    </footer>
+</div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.21/dist/vue.js"></script>
+<script src="../assets/JS/main.js"></script>
+</html>

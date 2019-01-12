@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../assets/CSS/main.css">
+</head>
+<body>
+<div v-bind:style="{backgroundColor: color}" id="wrapper">
+    <header id="header" class="header-component">
+        <div class="upper-left-corner">
+            <a href="../index.html" v-on:mouseover="mouseOver1" v-on:mouseleave="mouseOver1" v-bind:style="{color: textcolor1}"> ? </a>
+        </div>
+        <div class="upper-right-corner">
+            <a v-on:mouseover="mouseOver2" v-on:mouseleave="mouseOver2" v-bind:style="{color: textcolor2}"> Credentials </a>
+        </div>
+    </header>
+
+    <div id='central' class="center middle" v-if="!(active1 || active2 || active3 || active4)">
+        <p>._.</p>
+        <p>Under Construction</p>
+    </div>
+
+    <div class="center middle" v-show="active1" v-bind:style="{color: textcolor1}">
+        <p>This will probably take you back.</p>
+        <p>Only one way to find out.</p>
+    </div>
+
+    <div class="middle" v-show="active2" v-bind:style="{color: textcolor2}">
+        <li v-for="degree in degrees">
+            B.S. in {{degree}} - Middle Tennessee State University
+        </li>
+    </div>
+
+    <div  class='middle' v-show="active3" v-bind:style="{color: textcolor3}">
+        <p>Short term goals (within next five years):</p>
+        <li v-for="s in stgoals">
+            {{s}}
+        </li>
+        <p>Long term goals (within next ten years):</p>
+        <li v-for="l in ltgoals">
+            {{l}}
+        </li>
+    </div>
+
+    <div  class='middle' v-show="active4" v-bind:style="{color: textcolor4}">
+        <p>Cool things I am doing as well as some reflection.</p>
+    </div>
+
+    <footer id="footer" class="footer-component">
+        <div class="lower-left-corner">
+            <a v-on:mouseover="mouseOver3" v-on:mouseleave="mouseOver3" v-bind:style="{color: textcolor3}"> My Goals </a>
+        </div>
+        <div class="lower-right-corner">
+            <a href="blog.html" v-on:mouseover="mouseOver4" v-on:mouseleave="mouseOver4" v-bind:style="{color: textcolor4}"> My Blog </a>
+        </div>
+    </footer>
+</div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.21/dist/vue.js"></script>
+<script src="../assets/JS/main.js"></script>
+</html>

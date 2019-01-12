@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../assets/CSS/main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+</head>
+<body>
+<div v-bind:style="{backgroundColor: color}" id="wrapper">
+    <header id="header" class="header-component">
+        <div class="upper-left-corner">
+            <a id="override-bootstrap1" href="../index.html" v-on:mouseover="mouseOver1" v-on:mouseleave="mouseOver1" v-bind:style="{color: textcolor1}"> RETREAT </a>
+        </div>
+        <div class="upper-right-corner">
+            <a id="override-bootstrap2" href="https://twitter.com/theryanflorida" v-on:mouseover="mouseOver2" v-on:mouseleave="mouseOver2" v-bind:style="{color: textcolor2}"> Twitter </a>
+        </div>
+    </header>
+
+    <div id='central' class="center middle" v-if="!(active1 || active2 || active3 || active4)">
+        <button type="button" class="btn btn-dark">
+            <a id="override-bootstrap5" href="mailto:RyanFlorida77@gmail.com"><span class="label">Email Me</span></a>
+        </button>
+    </div>
+
+    <div class="center middle" v-show="active1" v-bind:style="{color: textcolor1}">
+        <p>This would be the button that takes you back to the homepage.</p>
+    </div>
+
+    <div class="center middle" v-show="active2" v-bind:style="{color: textcolor2}">
+        <p>If you love staying current on the latest tech and mathematics, then follow me on Twitter!</p>
+    </div>
+
+    <div  class='middle' v-show="active3" v-bind:style="{color: textcolor3}">
+        <p>Sometimes I take pictures. Mainly of food and books.</p>
+    </div>
+
+    <div  class='middle' v-show="active4" v-bind:style="{color: textcolor4}">
+        <p>If you would like to connect with me on a professional level, feel free to reach out!</p>
+    </div>
+
+    <footer id="footer" class="footer-component">
+        <div class="lower-left-corner">
+            <a id="override-bootstrap3" href="https://instagram.com/theryanflorida" v-on:mouseover="mouseOver3" v-on:mouseleave="mouseOver3" v-bind:style="{color: textcolor3}"> Instagram </a>
+        </div>
+        <div class="lower-right-corner">
+            <a id="override-bootstrap4" href="https://linkedin.com/in/ryanflorida/" v-on:mouseover="mouseOver4" v-on:mouseleave="mouseOver4" v-bind:style="{color: textcolor4}"> LinkedIn </a>
+        </div>
+    </footer>
+</div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.21/dist/vue.js"></script>
+<script src="../assets/JS/main.js"></script>
+</html>

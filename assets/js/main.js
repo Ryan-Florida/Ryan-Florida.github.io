@@ -1,134 +1,49 @@
-(function($) {
-	//Scroll to top of screen upon reload. Need this for parallax effect to work effectively.
-	// window.onbeforeunload = function() {
-	// 	window.scrollTo(0, 0);
-	// }
-
-	skel.breakpoints({
-		wide: '(min-width: 961px) and (max-width: 1880px)',
-		normal: '(min-width: 961px) and (max-width: 1620px)',
-		narrow: '(min-width: 961px) and (max-width: 1320px)',
-		narrower: '(max-width: 960px)',
-		mobile: '(max-width: 736px)'
-	});
-
-	$(function() {
-
-		var	$window = $(window),
-			$body = $('body');
-
-		// Disable animations/transitions until the page has loaded.
-			$body.addClass('is-loading');
-
-			$window.on('load', function() {
-				$body.removeClass('is-loading');
-			});
-
-		// CSS polyfills (IE<9).
-			if (skel.vars.IEVersion < 9)
-				$(':last-child').addClass('last-child');
-
-		// Fix: Placeholder polyfill.
-			$('form').placeholder();
-
-		// Prioritize "important" elements on mobile.
-			skel.on('+mobile -mobile', function() {
-				$.prioritize(
-					'.important\\28 mobile\\29',
-					skel.breakpoint('mobile').active
-				);
-			});
-
-		// Scrolly links.
-			$('.scrolly').scrolly();
-
-		// Nav.
-			var $nav_a = $('#nav a');
-
-			// Scrolly-fy links.
-				$nav_a
-					.scrolly()
-					.on('click', function(e) {
-
-						var t = $(this),
-							href = t.attr('href');
-
-						if (href[0] != '#')
-							return;
-
-						e.preventDefault();
-
-						// Clear active and lock scrollzer until scrolling has stopped
-							$nav_a
-								.removeClass('active')
-								.addClass('scrollzer-locked');
-					});
-
-			// Initialize scrollzer.
-				var ids = [];
-
-				$nav_a.each(function() {
-
-					var href = $(this).attr('href');
-
-					if (href[0] != '#')
-						return;
-
-					ids.push(href.substring(1));
-
-				});
-
-				$.scrollzer(ids, { pad: 200, lastHack: true });
-
-		// Header (narrower + mobile).
-
-			// Toggle.
-				$(
-					'<div id="headerToggle">' +
-						'<a href="#header" class="toggle"></a>' +
-					'</div>'
-				)
-					.appendTo($body);
-
-			// Header.
-				$('#header')
-					.panel({
-						delay: 500,
-						hideOnClick: true,
-						hideOnSwipe: true,
-						resetScroll: true,
-						resetForms: true,
-						side: 'left',
-						target: $body,
-						visibleClass: 'header-visible'
-					});
-
-			// Fix: Remove transitions on WP<10 (poor/buggy performance).
-				if (skel.vars.os == 'wp' && skel.vars.osVersion < 10)
-					$('#headerToggle, #header, #main')
-						.css('transition', 'none');
-
-
-		//Additional stuff.
-        //Effects.
-        // $(window).bind('scroll', function() {
-        //     var wScroll = $(this).scrollTop();
-        //     $(window).scroll(function()
-        //     {
-			// 	$('.hours').css({
-			// 		'-webkit-transform' : 'rotate(' + wScroll/6 + 'deg)',
-        //             '-moz-transform' : 'rotate(' + wScroll/6 + 'deg)',
-        //             '-ms-transform' : 'rotate(' + wScroll/6 + 'deg)',
-        //             'transform' : 'rotate(' + wScroll/6 + 'deg)'
-			// 	});
-        //         $('.minutes').css({
-        //             '-webkit-transform' : 'rotate(' + wScroll + 'deg)',
-        //             '-moz-transform' : 'rotate(' + wScroll + 'deg)',
-        //             '-ms-transform' : 'rotate(' + wScroll + 'deg)',
-        //             'transform' : 'rotate(' + wScroll + 'deg)'
-        //         });
-        //     });
-        // });
-	});
-
-})(jQuery);
+var vm1 = new Vue({
+    el: '#wrapper',
+    data: {
+        colors: ['#110011', '#e2e6e8'],
+        c: 0,
+        active1: false,
+        active2: false,
+        active3: false,
+        active4: false,
+        color: '#110011',
+        textcolor1: '#e2e6e8',
+        textcolor2: '#e2e6e8',
+        textcolor3: '#e2e6e8',
+        textcolor4: '#e2e6e8',
+        contactMethods: ['Email', 'LinkedIn', 'Twitter', 'Instagram'],
+        hobbies: ['Books', 'Music', 'Projects'],
+        degrees: ['Professional Computer Science', 'Professional Mathematics', 'Applied Physics'],
+        stgoals: ['Obtain MS in Computer Science', 'Obtain MBA',
+            'Sponsor one child per year from third-world country to come to college.'],
+        ltgoals: ['Obtain PhD (probably in machine learning)', 'Sponsor five children per year from third-world country' +
+        ' to come to college', 'Deliver laptops to all age groups in third-world country.']
+    },
+    methods: {
+        mouseOver1: function () {
+            this.textcolor1 = this.colors[this.c];
+            this.c = (this.c + 1)%2;
+            this.color = this.colors[this.c];
+            this.active1 = !this.active1;
+        },
+        mouseOver2: function () {
+            this.textcolor2 = this.colors[this.c];
+            this.c = (this.c + 1)%2;
+            this.color = this.colors[this.c];
+            this.active2 = !this.active2;
+        },
+        mouseOver3: function () {
+            this.textcolor3 = this.colors[this.c];
+            this.c = (this.c + 1)%2;
+            this.color = this.colors[this.c];
+            this.active3 = !this.active3;
+        },
+        mouseOver4: function () {
+            this.textcolor4 = this.colors[this.c];
+            this.c = (this.c + 1)%2;
+            this.color = this.colors[this.c];
+            this.active4 = !this.active4;
+        },
+    }
+});

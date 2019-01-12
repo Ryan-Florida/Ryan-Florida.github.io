@@ -1,1 +1,61 @@
-<!DOCTYPE HTML><html><head><title>Ryan Florida</title><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="assets/css/main.css"/><link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png"><link rel="manifest" href="/images/favicons/site.webmanifest"><link rel="mask-icon" href="/images/favicons/safari-pinned-tab.svg" color="#5bbad5"><link rel="icon" type="image/x-icon" sizes="16x16" href="images/favicons/favicon.ico"/></head><body><div id="header"><div class="top"><div id="logo"><span class="image avatar48"><img src="images/me.jpg" alt=""/></span><h1 id="title"><a href="index.html">Ryan Florida</a></h1><p>Computer Science - B.S.</p><p>Mathematics - B.S.</p><p>Physics - B.S.</p></div><nav id="nav"><!--Prologue's nav expects links in one of two formats:1. Hash link (scrolls to a different section within the page) <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>2. Standard link (sends the user to another page/site) <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>--><ul><li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro</span></a></li><li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About Me</span></a></li><li><a href="#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Portfolio</span></a></li></ul></nav></div><div class="bottom"><ul class="icons"><li><a href="https://twitter.com/TheRyanFlorida" class="icon fa-twitter"><span class="label">Twitter</span></a></li><li><a href="https://www.facebook.com/BigFlorida" class="icon fa-facebook"><span class="label">Facebook</span></a></li><li><a href="https://github.com/Ryan-Florida" class="icon fa-github"><span class="label">Github</span></a></li><li><a href="mailto:RyanFlorida77@gmail.com" class="icon fa-envelope"><span class="label">Email</span></a></li><li><a href="https://www.linkedin.com/in/ryanflorida/" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li></ul></div></div><div id="main"><section id="top" class="one dark cover"><div class="container"><header class="top_header"><h2 class="alt">Hello and welcome to my website!</h2><p>Feel free to browse around to see what I am<br/>interested in and don't forget to check out my <a id="git" href="https://github.com/Ryan-Florida">GitHub</a>!</p></header><footer><a id="fix_color_button" href="#portfolio" class="button scrolly">See My Work</a></footer></div></section><section id="about" class="three"><div class="container"><header><h2>About Me</h2></header><p>I am an aspiring software engineer and have a very strong interest in machine learning and artificial intelligence. I am endlessly intrigued by autonomous vehicles and data mining.</p><a href="https://www.math.stonybrook.edu/~bishop/papers/julia=1.pdf" class="image featured"><header class="holder"><div class="image_1"></div></header></a></div></section><section id="portfolio" class="two"><div class="container"><header><h2>How I spend most of my time.</h2></header> <div class="clock"><div class="clock_face"><div class="hours-container"><div class="hours"></div></div><div class="minutes-container"><div class="minutes"></div></div><div class="clock-dot"></div></div></div><p></p><div class="row"><div class="4u 12u$(mobile)"><article class="item"><header><h3>Books</h3></header></article><article class="item"><header><h3>Movies</h3></header></article></div><div class="4u 12u$(mobile)"><article class="item"><header><h3>Hobbies</h3></header></article><article class="item"><header><h3>Code</h3></header></article></div><div class="4u$ 12u$(mobile)"><article class="item"><li><a href="mathematics.html" class="image fit"><img src="images/eipi.jpg" alt=""/></a></li><header><h3>Mathematics</h3></header></article><article class="item"><header><h3>Physics</h3></header></article></div></div></div></section></div><div id="footer"><ul class="copyright"><li>&copy; Ryan Florida. All rights reserved.</li></ul></div><script src="assets/js/jquery.min.js"></script><script src="assets/js/jquery.scrolly.min.js"></script><script src="assets/js/jquery.scrollzer.min.js"></script><script src="assets/js/skel.min.js"></script><script src="assets/js/util.js"></script><script src="assets/js/main.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="assets/CSS/main.css">
+</head>
+<body>
+    <div v-bind:style="{backgroundColor: color}" id="wrapper">
+        <header id="header" class="header-component">
+            <div class="upper-left-corner">
+                <a href="pages/about.html" v-on:mouseover="mouseOver1" v-on:mouseleave="mouseOver1" v-bind:style="{color: textcolor1}"> About Me </a>
+            </div>
+            <div class="upper-right-corner">
+                <a href="https://github.com/ryan-florida" v-on:mouseover="mouseOver2" v-on:mouseleave="mouseOver2" v-bind:style="{color: textcolor2}"> GitHub </a>
+            </div>
+        </header>
+
+        <div id='central' class="center middle blur-this" v-if="!(active1 || active2 || active3 || active4)">
+            <p>Hello. My name is Ryan Florida and I am an aspiring software engineer who has a very</p>
+            <p>strong interest in machine learning and artificial intelligence. I am endlessly</p>
+            <p>fascinated by autonomous vehicles and data mining.</p>
+        </div>
+
+        <div class="center middle" v-show="active1" v-bind:style="{color: textcolor1}">
+            <p>Just a bit more about me.
+        </div>
+
+        <div class="center middle" v-show="active2" v-bind:style="{color: textcolor2}">
+            <p>Goodbye, friend!</p>
+            <p>Come back soon!</p>
+            <p>Feel free to reach out if you would like to collaborate on a project!</p>
+        </div>
+
+        <div  class='middle' v-show="active3" v-bind:style="{color: textcolor3}">
+            <p>Feel free to contact me in any of the following ways:</p>
+            <li v-for="contactMethod in contactMethods">
+                {{contactMethod}}
+            </li>
+        </div>
+
+        <div  class='middle' v-show="active4" v-bind:style="{color: textcolor4}">
+            <p>How I spend most of my time:</p>
+            <li v-for="hobby in hobbies">
+                {{hobby}}
+            </li>
+        </div>
+
+        <footer id="footer" class="footer-component">
+            <div class="lower-left-corner">
+                <a href="pages/contact.html" v-on:mouseover="mouseOver3" v-on:mouseleave="mouseOver3" v-bind:style="{color: textcolor3}"> Contact Me </a>
+            </div>
+            <div class="lower-right-corner">
+                <a href="pages/human_things.html" v-on:mouseover="mouseOver4" v-on:mouseleave="mouseOver4" v-bind:style="{color: textcolor4}"> Human Things </a>
+            </div>
+        </footer>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.21/dist/vue.js"></script>
+<script src="assets/JS/main.js"></script>
+</html>
