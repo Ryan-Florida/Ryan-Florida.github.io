@@ -1,67 +1,69 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Ryan Florida</title>
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png">
-    <link rel="manifest" href="assets/images/favicons/site.webmanifest">
-    <link rel="mask-icon" href="assets/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="icon" type="image/x-icon" sizes="16x16" href="assets/images/favicons/favicon.ico"/>
-</head>
-<body>
-    <div v-bind:style="{backgroundColor: color}" id="wrapper">
-        <header id="header" class="header-component">
-            <div class="upper-left-corner">
-                <a href="pages/about.html" v-on:mouseover="mouseOver1" v-on:mouseleave="mouseOver1" v-bind:style="{color: textcolor1}"> About Me </a>
-            </div>
-            <div class="upper-right-corner">
-                <a href="https://github.com/ryan-florida" v-on:mouseover="mouseOver2" v-on:mouseleave="mouseOver2" v-bind:style="{color: textcolor2}"> GitHub </a>
-            </div>
-        </header>
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+    <!--<meta charset="UTF-8">-->
+    <!--<title>Ryan Florida</title>-->
+    <!--<link rel="stylesheet" href="assets/css/reset.css">-->
+    <!--<link rel="stylesheet" href="assets/css/main.css">-->
+    <!--<link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png">-->
+    <!--<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png">-->
+    <!--<link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png">-->
+    <!--&lt;!&ndash;<link rel="manifest" href="assets/images/favicons/site.webmanifest">&ndash;&gt;-->
+    <!--<link rel="mask-icon" href="assets/images/favicons/safari-pinned-tab.svg" color="#5bbad5">-->
+    <!--<link rel="icon" type="image/x-icon" sizes="16x16" href="assets/images/favicons/favicon.ico"/>-->
+<!--</head>-->
+<!--<body>-->
+    <!--<div v-bind:style="{backgroundColor: color}" id="wrapper">-->
+        <!--<header id="header" class="header-component">-->
+            <!--<div class="upper-left-corner">-->
+                <!--<a href="pages/about.html" v-on:mouseover="mouseOver1" v-on:mouseleave="mouseOver1" v-bind:style="{color: textcolor1}"> About Me </a>-->
+            <!--</div>-->
+            <!--<div class="upper-right-corner">-->
+                <!--<a href="https://github.com/ryan-florida" v-on:mouseover="mouseOver2" v-on:mouseleave="mouseOver2" v-bind:style="{color: textcolor2}"> GitHub </a>-->
+            <!--</div>-->
+        <!--</header>-->
 
-        <div id='central' class="center middle blur-this" v-if="!(active1 || active2 || active3 || active4)">
-            <p>Hello. My name is Ryan Florida and I am an aspiring software engineer who has a very</p>
-            <p>strong interest in machine learning and artificial intelligence. I am endlessly</p>
-            <p>fascinated by autonomous vehicles and data mining.</p>
-        </div>
+        <!--<div id='central' class="center middle blur-this" v-if="!(active1 || active2 || active3 || active4)">-->
+            <!--<p>Hello. My name is Ryan Florida and I am an aspiring software engineer who has a very</p>-->
+            <!--<p>strong interest in machine learning and artificial intelligence. I am endlessly</p>-->
+            <!--<p>fascinated by autonomous vehicles and data mining.</p>-->
+        <!--</div>-->
 
-        <div class="center middle" v-show="active1" v-bind:style="{color: textcolor1}">
-            <p>Just a bit more about me.
-        </div>
+        <!--<div class="center middle" v-show="active1" v-bind:style="{color: textcolor1}">-->
+            <!--<p>Just a bit more about me.-->
+        <!--</div>-->
 
-        <div class="center middle" v-show="active2" v-bind:style="{color: textcolor2}">
-            <p>Goodbye, friend!</p>
-            <p>Come back soon!</p>
-            <p>Feel free to reach out if you would like to collaborate on a project!</p>
-        </div>
+        <!--<div class="center middle" v-show="active2" v-bind:style="{color: textcolor2}">-->
+            <!--<p>Goodbye, friend!</p>-->
+            <!--<p>Come back soon!</p>-->
+            <!--<p>Feel free to reach out if you would like to collaborate on a project!</p>-->
+        <!--</div>-->
 
-        <div  class='middle' v-show="active3" v-bind:style="{color: textcolor3}">
-            <p>Feel free to contact me in any of the following ways:</p>
-            <li v-for="contactMethod in contactMethods">
-                {{contactMethod}}
-            </li>
-        </div>
+        <!--<div  class='middle' v-show="active3" v-bind:style="{color: textcolor3}">-->
+            <!--<p>Feel free to contact me in any of the following ways:</p>-->
+            <!--<li v-for="contactMethod in contactMethods">-->
+                <!--{{contactMethod}}-->
+            <!--</li>-->
+        <!--</div>-->
 
-        <div  class='middle' v-show="active4" v-bind:style="{color: textcolor4}">
-            <p>How I spend most of my time:</p>
-            <li v-for="hobby in hobbies">
-                {{hobby}}
-            </li>
-        </div>
+        <!--<div  class='middle' v-show="active4" v-bind:style="{color: textcolor4}">-->
+            <!--<p>How I spend most of my time:</p>-->
+            <!--<li v-for="hobby in hobbies">-->
+                <!--{{hobby}}-->
+            <!--</li>-->
+        <!--</div>-->
 
-        <footer id="footer" class="footer-component">
-            <div class="lower-left-corner">
-                <a href="pages/contact.html" v-on:mouseover="mouseOver3" v-on:mouseleave="mouseOver3" v-bind:style="{color: textcolor3}"> Contact Me </a>
-            </div>
-            <div class="lower-right-corner">
-                <a href="pages/human_things.html" v-on:mouseover="mouseOver4" v-on:mouseleave="mouseOver4" v-bind:style="{color: textcolor4}"> Human Things </a>
-            </div>
-        </footer>
-    </div>
-</body>
-<script src="https://cdn.jsdelivr.net/npm/vue@2.5.21/dist/vue.js"></script>
-<script src="assets/js/main.js"></script>
-</html>
+        <!--<footer id="footer" class="footer-component">-->
+            <!--<div class="lower-left-corner">-->
+                <!--<a href="pages/contact.html" v-on:mouseover="mouseOver3" v-on:mouseleave="mouseOver3" v-bind:style="{color: textcolor3}"> Contact Me </a>-->
+            <!--</div>-->
+            <!--<div class="lower-right-corner">-->
+                <!--<a href="pages/human_things.html" v-on:mouseover="mouseOver4" v-on:mouseleave="mouseOver4" v-bind:style="{color: textcolor4}"> Human Things </a>-->
+            <!--</div>-->
+        <!--</footer>-->
+    <!--</div>-->
+<!--</body>-->
+<!--<script src="https://cdn.jsdelivr.net/npm/vue@2.5.21/dist/vue.js"></script>-->
+<!--<script src="assets/js/main.js"></script>-->
+<!--</html>-->
+<meta http-equiv="refresh" content="0" url="https://repo.github.io/my_site/public/index.html" />

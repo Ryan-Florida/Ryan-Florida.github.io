@@ -8,7 +8,6 @@
     <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicons/favicon-16x16.png">
-    <!--<link rel="manifest" href="../assets/images/favicons/site.webmanifest">-->
     <link rel="mask-icon" href="../assets/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
     <link rel="icon" type="image/x-icon" sizes="16x16" href="../assets/images/favicons/favicon.ico"/>
 </head>
@@ -16,28 +15,31 @@
 <div v-bind:style="{backgroundColor: color}" id="wrapper">
     <header id="header" class="header-component">
         <div class="upper-left-corner">
-            <a href="../index.html" v-on:mouseover="mouseOver1" v-on:mouseleave="mouseOver1" v-bind:style="{color: textcolor1}"> TAKE ME BACK </a>
+            <a href="human_things.html" v-show="!active5" v-on:mouseover="mouseOver1" v-on:mouseleave="mouseOver1" v-bind:style="{color: textcolor1}"> Human Things </a>
         </div>
         <div class="upper-right-corner">
-            <a v-on:mouseover="mouseOver2" v-on:mouseleave="mouseOver2" v-bind:style="{color: textcolor2}"> Book of the Week </a>
+            <a v-on:mouseover="mouseOver5" v-bind:style="{color: textcolor5}" v-bind:class="{underline: active5}"> All Projects </a>
         </div>
     </header>
 
-    <div id='central' class="center middle" v-if="!(active1 || active2 || active3 || active4)">
-        <p>Hello. My name is Ryan Florida and I am an aspiring software engineer who has a very</p>
-        <p>strong interest in machine learning and artificial intelligence. I am endlessly</p>
-        <p>fascinated by autonomous vehicles and data mining.</p>
+    <div id='canva' class="center middle" v-if="!(active1 || active5 || active3 || active4)">
+        <!--<vue-p5 v-on="this"></vue-p5>-->
     </div>
 
     <div class="center middle" v-show="active1" v-bind:style="{color: textcolor1}">
         <p>Escape!</p>
     </div>
 
-    <div class="center middle" v-show="active2" v-bind:style="{color: textcolor2}">
-        COMING SOON!
+    <div class="center middle" v-show="active5" v-bind:style="{color: textcolor5}">
+        Select a project!
+    </div>
+    <div class="menu" v-show="active5" v-bind:style="{color: textcolor5}">
+        <li class = "no-dot" v-for="project in projects">
+            <a :href="project.link">{{project.name}}</a>
+        </li>
     </div>
 
-    <div  class='middle' v-show="active3" v-bind:style="{color: textcolor3}">
+    <div class='middle' v-show="active3" v-bind:style="{color: textcolor3}">
         COMING SOON!
     </div>
 
@@ -47,14 +49,22 @@
 
     <footer id="footer" class="footer-component">
         <div class="lower-left-corner">
-            <a v-on:mouseover="mouseOver3" v-on:mouseleave="mouseOver3" v-bind:style="{color: textcolor3}"> Music I Enjoy </a>
+            <a v-on:mouseover="mouseOver3" v-show="!active5" v-on:mouseleave="mouseOver3" v-bind:style="{color: textcolor3}"> Previous </a>
         </div>
         <div class="lower-right-corner">
-            <a href="projects.html" v-on:mouseover="mouseOver4" v-on:mouseleave="mouseOver4" v-bind:style="{color: textcolor4}"> My Projects </a>
+            <a v-on:mouseover="mouseOver4" v-show="!active5" v-on:mouseleave="mouseOver4" v-bind:style="{color: textcolor4}"> Next </a>
         </div>
     </footer>
 </div>
+
 </body>
 <script src="https://cdn.jsdelivr.net/npm/vue@2.5.21/dist/vue.js"></script>
 <script src="../assets/js/main.js"></script>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<script type="text/javascript">
+    function noenter() {
+        return !(window.event && window.event.keyCode == 13); }
+</script>
+<script src="https://unpkg.com/vue"></script>
+<script src="https://unpkg.com/vue-p5@0.7.x"></script>
 </html>

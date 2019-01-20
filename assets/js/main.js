@@ -7,18 +7,21 @@ var vm1 = new Vue({
         active2: false,
         active3: false,
         active4: false,
+        active5: false,
         color: '#110011',
         textcolor1: '#e2e6e8',
         textcolor2: '#e2e6e8',
         textcolor3: '#e2e6e8',
         textcolor4: '#e2e6e8',
+        textcolor5: '#e2e6e8',
         contactMethods: ['Email', 'LinkedIn', 'Twitter', 'Instagram'],
         hobbies: ['Books', 'Music', 'Projects'],
         degrees: ['Professional Computer Science', 'Professional Mathematics', 'Applied Physics'],
         stgoals: ['Obtain MS in Computer Science.', 'Obtain MBA.',
             'Sponsor one person per year from a third-world country to come to college.'],
         ltgoals: ['Obtain PhD (probably in machine learning).', 'Sponsor five people per year from a third-world country' +
-        ' to come to college.', 'Deliver laptops to all age groups in third-world country.']
+        ' to come to college.', 'Deliver laptops to all age groups in third-world country.'],
+        projects: [{name: 'Gates of Disorder', page: 'gates_of_disorder.js'}]
     },
     methods: {
         mouseOver1: function () {
@@ -44,6 +47,12 @@ var vm1 = new Vue({
             this.c = (this.c + 1)%2;
             this.color = this.colors[this.c];
             this.active4 = !this.active4;
+        },
+        mouseOver5: function () {
+            this.textcolor5 = this.colors[this.c];
+            this.c = (this.c + 1)%2;
+            this.color = this.colors[this.c];
+            this.active5 = !this.active5;
         },
     }
 });
