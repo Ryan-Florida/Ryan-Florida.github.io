@@ -1,4 +1,4 @@
-// vue.config.js
+//vue.config.js
 module.exports = {
-    baseURL:'/my_site/'
+    publicPath: process.env.NODE_ENV === 'production' ? '/my-site/' : '/'
 }
