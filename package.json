@@ -1,0 +1,41 @@
+{
+  "name": "ryanflorida.com",
+  "version": "1.0.0",
+  "private": true,
+  "description": "ryanflorida.com",
+  "author": "rflorida",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "format": "./node_modules/prettier/bin-prettier.js ."
+  },
+  "dependencies": {
+    "gatsby": "^4.1.0",
+    "gatsby-plugin-google-analytics": "^4.1.0",
+    "gatsby-plugin-image": "^2.1.0",
+    "gatsby-plugin-react-helmet": "^5.1.0",
+    "gatsby-plugin-sass": "^5.1.0",
+    "gatsby-plugin-sharp": "^4.1.0",
+    "gatsby-plugin-sitemap": "^5.1.0",
+    "gatsby-source-filesystem": "^4.1.0",
+    "gatsby-transformer-sharp": "^4.1.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-helmet": "^6.1.0",
+    "sass": "^1.43.4"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.6",
+    "@types/react": "^17.0.34",
+    "@types/react-dom": "^17.0.11",
+    "gh-pages": "^3.2.3",
+    "husky": "^7.0.4",
+    "prettier": "^2.4.1"
+  }
+}
